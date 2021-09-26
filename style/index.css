@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Background1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo
+{
+  width: 200px;
+  margin : 10px 45px;
+}
+
+nav ul li
+{
+  list-style: none;
+  display: inline-block;
+  margin: 0 50px;
+  position: relative;
+}
+
+nav ul li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+
+nav ul li a:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #009688;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+nav ul li a:after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #009688;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover:before, nav ul li a:hover:after
+{
+  transform: scaleX(1);
+  transform-origin: Left;
+}
+
+
+.container {
+width:80%;
+margin:0 auto;
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1{
+  text-transform: uppercase;
+  color: #009688;
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content h2{
+  color: #fff;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.content p{
+  margin: 20px auto;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 50px;
+  word-spacing: 2px;
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+button:hover{
+  border: none;
+}
+
+.about{
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Background1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.about h3 {
+  font-size: 50px;
+text-align: center;
+  text-transform: uppercase;
+padding:50px 0;
+color: #009688;
+margin-bottom: 20px;
+}
+
+.about p {
+color: #fff;
+  font-size: 30px;
+word-spacing: 2px;
+line-height: 50px;
+margin-bottom: 20px;
+  text-align: center;
+}
+
+.about{
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Background1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.sosmed{
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Background1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.sosmed h3 {
+text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+padding:20px 0;
+color: #009688;
+margin-bottom: 25px;
+}
+
+.box {
+color: #fff;
+  margin-top: 150px;
+}
+
+.box:after {
+content: '';
+display: block;
+clear: both;
+}
+.box .col-4 {
+width:25%;
+padding:20px;
+box-sizing: border-box;
+text-align: center;
+float: left;
+}
+
+.icon1 {
+width:70px;
+height:70px;
+text-align: center;
+line-height: 70px;
+font-size: 50px;
+margin:0 auto;
+  cursor: pointer;
+}
+
+.icon1:hover{
+  color:  #00acee;
+}
+
+.icon2 {
+width:70px;
+height:70px;
+text-align: center;
+line-height: 70px;
+font-size: 50px;
+margin:0 auto;
+  cursor: pointer;
+}
+
+.icon2:hover{
+  color:  #c4302b;
+}
+
+.icon3 {
+width:70px;
+height:70px;
+text-align: center;
+line-height: 70px;
+font-size: 50px;
+margin:0 auto;
+  cursor: pointer;
+}
+
+.icon3:hover{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.icon4 {
+width:70px;
+height:70px;
+text-align: center;
+line-height: 70px;
+font-size: 50px;
+margin:0 auto;
+  cursor: pointer;
+}
+
+.icon4:hover{
+  color:  #3b5998;
+}
+
+.box .col-4 h2 {
+margin:40px 0;
+}
+
+footer {
+padding:30px 0;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Background1.png);
+color: #fff;
+text-align: center;
+}
